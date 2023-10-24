@@ -1,3 +1,22 @@
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #11263178;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
 #main {
     padding-left: 20px;
 }
@@ -99,6 +118,30 @@ main{
     padding-top: 100px;
 }
 
+#main p{
+    font-size: large;
+
+}
+
+#main span {
+    font-style: italic;
+}
+
+#main h1 {
+    display:inline;
+    text-align: center;
+    font-size: 70px;
+    justify-content: center;
+    margin-left: 32%;
+    margin-right: 5%;
+}
+
+#main img {
+    height: 220px;
+    margin-right: 0px;
+    
+}
+
 .fuente {
     font-style: italic;
 }
@@ -112,11 +155,7 @@ main{
 }
 
 #lista1 {
-    background: url(../img/newsletterr.png);
-    background-repeat: no-repeat;
-    background-position: 125cqh;
-    background-size: 32%;
-    background-blend-mode: color-burn;
+    
     display: grid;
     grid-template-columns: 20vw 35vw;
     grid-template-rows: 5vh 5vh 5vh 5vh 12vh 5vh 5vh 5vh;  
@@ -143,3 +182,39 @@ main{
     text-align: center;
 }
 
+footer a * {
+    display:inline;
+    vertical-align: middle;
+    color:black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.red img {
+    height: 50px;
+}
+
+#redes {
+    float:right;
+    margin-top:2%;
+    margin-right:2%;
+}
+
+footer p {
+    display:block;
+    text-align: center;
+    margin:0px;
+    padding-bottom:2%;
+}
+
+footer {
+    background-color: var(--header-color);
+    height:200px;
+    width:100%;
+}
+
+#logofooter {
+    height:50%;
+}

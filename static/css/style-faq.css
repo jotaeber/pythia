@@ -1,17 +1,57 @@
 :root {
-    background-color: #c993cd;
+    --header-color:#0d5d56; /*#0d5d56*/
+    --presentacion-color:#c994cd;/*#8fd5a6*/
+    --footer-color::#0d5d56;
+    --body-color:#c994cd;
+    --linea-color:#112631;
+    --contenido-color:#9aacab;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: 'Roboto', sans-serif;
 }
-#imagen-faq{
-    display: inline;
-    margin-top: 10px;
-    align-content: end;
-    width: 300px;
-    height: 250px;
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #11263178;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+html {
+    margin:0%;
+    padding:0%;
+}
+
+body {
+    margin:0%;
+    padding:0%;
+    background-color: var(--body-color);
+    font-family: "Segoe UI", "PT Sans", Calibri, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 
 
+
+
+#imagen-faq {
+    display: block;
+    margin-top: 10px;
+    align-content: end;
+    width: 400px;
+    margin-left:auto;
+    margin-right:auto;
+}
 
 @font-face {
     font-family: "Segoe uI";
@@ -19,10 +59,6 @@
     src: url('./segoe-ui-4-cufonfonts/Segoe\ UI.ttf') format('truetype');
 }
 
-html {
-    margin: 0%;
-    padding: 0%        
-}
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
@@ -33,6 +69,11 @@ html {
 #name {
     color: black;
 }
+
+a {
+    text-decoration: none;
+}
+
 .header__nav { 
     padding: 20px;
     border-radius: 10px;    
@@ -57,15 +98,17 @@ html {
     padding: 0%;
 }
 
-.main 
-
 .main__title { 
     color: black;
     background-color: #c993cd;
     border-radius: 10px;
-    font-size: 30px;
-    display: inline;
-    justify-content: start;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main__title h1 { 
+    margin-top:0px;
+    padding-top:0px;
 }
 
 .main__question {
@@ -85,13 +128,6 @@ html {
     border-radius: 10px;
 }
 
-.footer { 
-    background-color: #0d5c56;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: right;
-}
 
 .section__form {
     font-size: 20px;
@@ -102,44 +138,6 @@ html {
     width: auto;
     font-size: 20px;
     color: black;
-}
-
-.footer__ul__li {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    display: inline;
-    text-align: right;
-    display: inline;
-    margin-right: 50px;
-}
-
-:root {
-    --header-color:#0d5d56; /*#0d5d56*/
-    --presentacion-color:#c994cd;/*#8fd5a6*/
-    --footer-color::#0d5d56;
-    --body-color:#c994cd;
-    --linea-color:#112631;
-    --contenido-color:#9aacab;
-}
-
-
-@font-face {
-    font-family: "Segoe UI";
-    src: url('./segoe-ui-4-cufonfonts/Segoe\ UI.ttf');
-    src: url('./segoe-ui-4-cufonfonts/Segoe\ UI.ttf') format('truetype');
-}
-
-html {
-    margin:0%;
-    padding:0%;
-}
-
-body {
-    margin:0%;
-    padding:0%;
-    background-color: var(--body-color);
-    font-family: "Segoe UI", "PT Sans", Calibri, Tahoma, sans-serif;
 }
 
 
@@ -167,7 +165,6 @@ header * {
 
 #links a {
     margin-right:50px;
-
 }
 
 #linea {
@@ -199,25 +196,41 @@ header * {
     color: darkolivegreen;
 }
 
-/*submenu desplegable dentro de "nuestros cursos"*/
 
-.sub-menu{
-    position: absolute;
-    background-color: rgb(41, 60, 39);
-    width:70% ;
-    border-radius: 2px;
-    transition: all .3s ease-in-out;
-    visibility: hidden;
-    opacity: 0;
-    
+
+footer a * {
+    display:inline;
+    vertical-align: middle;
+    color:black;
 }
 
-.sub-menu > li > a{
+a {
     text-decoration: none;
-    color: #fff;
-    display: block;
-    font-size: 12px;
-    padding: 10px 10px;
-    
+}
 
+.red img {
+    height: 50px;
+}
+
+#redes {
+    float:right;
+    margin-top:2%;
+    margin-right:2%;
+}
+
+footer p {
+    display:block;
+    text-align: center;
+    margin:0px;
+    padding-bottom:2%;
+}
+
+footer {
+    background-color: var(--header-color);
+    height:200px;
+    width:100%;
+}
+
+#logofooter {
+    height:50%;
 }
