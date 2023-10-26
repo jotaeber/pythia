@@ -114,13 +114,12 @@ header * {
     height: 8px;
 }
 
-main{
+main {
     padding-top: 100px;
 }
 
-#main p{
+#main p {
     font-size: large;
-
 }
 
 #main span {
@@ -138,12 +137,21 @@ main{
 
 #main img {
     height: 220px;
-    margin-right: 0px;
-    
+    transform: scale(1) translateY(20%);
+}
+/****************************************************/
+hr {
+    height: 1px;
+    background-color: var(--linea-color);
+    border: none;
 }
 
 .fuente {
     font-style: italic;
+}
+
+#suscripcion h2, #subs {
+    margin-left: 4%;
 }
 
 .lista  {
@@ -154,8 +162,14 @@ main{
     padding: 3px;
 }
 
+.lista input {
+    width: 15%;
+    font-size: large;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
 #lista1 {
-    
     display: grid;
     grid-template-columns: 20vw 35vw;
     grid-template-rows: 5vh 5vh 5vh 5vh 12vh 5vh 5vh 5vh;  

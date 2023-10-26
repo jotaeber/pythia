@@ -1,34 +1,45 @@
+/* ---------- General -----------*/
+
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
+
+:root {
+    --header-color:#0d5d56; /*#0d5d56*/
+    --presentacion-color:#c994cd;/*#8fd5a6*/
+    --footer-color::#0d5d56;
+    --body-color:#c994cd;
+    --linea-color:#112631;
+    --contenido-color:#9aacab;
+    --titulo-color:#112631bd;
+}
+
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url('./segoe-ui-4-cufonfonts/Segoe\ UI.ttf');
+    src: url('./segoe-ui-4-cufonfonts/Segoe\ UI.ttf') format('truetype');
+}
+
+html {
+    margin:0%;
+    padding:0%;
+}
+
+body {
+    margin:0%;
+    padding:0%;
+    background-color: var(--body-color);
+    font-family: "Segoe UI", "PT Sans", Calibri, Tahoma, sans-serif;
+}
+
+body {
     background-color: #C993CD;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-footer{
-    width: 100%;
-    height: 70%;
-    background-color: #7F5C80;
-}
-
-main h2{
-    text-align: center;
-    padding-top: 0.3vh;
-    padding-bottom: 1vh;
-}
-
-main article p {
-    padding-right: 2vw;
-    padding-left: 2vw;
-    font-size: 1.2rem;
-    font-weight: 600;
-    display: inline;
 }
 
 ::-webkit-scrollbar {
@@ -50,6 +61,67 @@ main article p {
     background-color: #a8bbbf;
 }
 
+/*----------- Header ---------*/
+
+header {
+    background-color:var(--header-color); 
+    height: 60px;
+    
+}
+
+#logo {
+    height:100%;
+}
+
+header * {
+    display:inline;
+    vertical-align: middle;
+    color:black;
+}
+
+
+#links {
+    position:absolute;
+    right:0px;
+    top:2%;
+}
+
+#links a {
+    margin-right:50px;
+
+}
+
+#linea {
+    background-color: var(--linea-color);
+    height: 8px;
+}
+
+/* ---------- Main -----------*/
+
+#bienvenida {
+    color: white;
+    background-color: var(--header-color);
+    text-align: center;
+    padding-top:0.1em;
+    padding-bottom:0.2em;
+}
+
+main h2 {
+    text-align: center;
+    padding-top: 0.3vh;
+    padding-bottom: 1vh;
+}
+
+main article p {
+    padding-right: 2vw;
+    padding-left: 2vw;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: inline;
+}
+
+
+/*-------------- Galería ---------*/
 .galeria > .card > .cuerpo-card > h3 {
     text-align: center;
 }
@@ -101,103 +173,42 @@ main article p {
 
 .parrafo {
     visibility: visible;
+    background-color: black;
+    border-radius: 0px 0px 42px 0px;    
+    opacity: 70%;
+    align-self: center;
+    justify-content: center;
 }
 
 .titulo-index {
     color: white;
-}
-
-.menu > li{
-    position: relative right;
-    display: inline-block;
-}
-
-#bienvenida {
-    color: white;
-    background-color: var(--header-color);
+    background-color: black;
+    border-radius: 38px 0px 0px 0px;    
+    opacity: 70%;
     text-align: center;
+    justify-content: center;
+    align-self: center;
 }
 
-.galeria{
+.galeria {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 2%;
 }
 
 #cursos {
     text-align: center;
     font-size: 2em;
-    background-color: var(--linea-color);
-}
-
-
-
-:root {
-    --header-color:#0d5d56; /*#0d5d56*/
-    --presentacion-color:#c994cd;/*#8fd5a6*/
-    --footer-color::#0d5d56;
-    --body-color:#c994cd;
-    --linea-color:#112631;
-    --contenido-color:#9aacab;
-}
-
-
-@font-face {
-    font-family: "Segoe UI";
-    src: url('./segoe-ui-4-cufonfonts/Segoe\ UI.ttf');
-    src: url('./segoe-ui-4-cufonfonts/Segoe\ UI.ttf') format('truetype');
-}
-
-html {
-    margin:0%;
-    padding:0%;
-}
-
-body {
-    margin:0%;
-    padding:0%;
-    background-color: var(--body-color);
-    font-family: "Segoe UI", "PT Sans", Calibri, Tahoma, sans-serif;
-}
-
-
-header {
-    background-color:var(--header-color); 
-    height: 60px;
-    
-}
-
-#logo {
-    height:100%;
-}
-
-header * {
-    display:inline;
-    vertical-align: middle;
-    color:black;
-}
-
-
-#links {
-    position:absolute;
-    right:0px;
-    top:2%;
-}
-
-#links a {
-    margin-right:50px;
-
-}
-
-#linea {
-    background-color: var(--linea-color);
-    height: 8px;
+    background-color: var(--titulo-color);
+    color: white;
+    padding-top:0.1em;
+    padding-bottom:0.2em;
 }
 
 .card {
-    margin-left: 7px;
-    margin-right: 10px;
+    margin-left: 16%;
     position: relative;
-    
+    border-radius: 30px;
 }
 
 .cuerpo-card {
@@ -208,7 +219,7 @@ header * {
     width: 190px;
     bottom: 4px;
     padding: 5px;  
-    
+    border-radius: 5%;
 }
 
 .cuerpo-card h3, p {
@@ -216,12 +227,11 @@ header * {
     color: white;
 }
 
-
 .card img {
     width: 200px;
     object-fit: cover;
     height: 300px;
-   
+    border-radius: 5%;
 }
 
 /* .card:hover .cuerpo-card {
@@ -235,7 +245,7 @@ header * {
     to {background-color: darkslategrey;}
 }
 
-.cuerpo-card:hover p{
+.cuerpo-card:hover p {
     opacity: 80%;
     background-color: black;
     justify-content: center;
@@ -246,6 +256,7 @@ header * {
     animation: transicion 0.5s ease-in 0.3s 1 forwards forwards running;
     transition: 0.5s ease-in-out; 
 }
+
 .cuerpo-card:hover{
     opacity: 80%;
     background-color: black;
@@ -257,7 +268,8 @@ header * {
     animation: transicion 0.5s ease-in 0.3s 1 forwards forwards running;
     transition: 0.5s ease-in-out; 
 }
-.cuerpo-card:hover h3{
+
+.cuerpo-card:hover h3 {
     opacity: 80%;
     background-color: black;
     justify-content: center;
@@ -268,6 +280,17 @@ header * {
     animation: transicion 0.5s ease-in 0.3s 1 forwards forwards running;
     transition: 0.5s ease-in-out; 
 }
+
+
+/*-------------Footer------------*/
+
+
+footer {
+    width: 100%;
+    height: 50%;
+    background-color: #7F5C80;
+}
+
 
 footer a * {
     display:inline;
@@ -294,6 +317,8 @@ footer p {
     text-align: center;
     margin:0px;
     padding-bottom:2%;
+    color:black;
+    visibility: visible;
 }
 
 footer {
@@ -305,6 +330,9 @@ footer {
 #logofooter {
     height:50%;
 }
+
+
+/*-----Screen----*/
 
 
 @media screen and (max-width: 767px) {
@@ -392,12 +420,21 @@ footer {
     
     .parrafo {
         visibility: visible;
+        background-color: black;
+        border-radius: 0px 0px 10px 0px;    
+        opacity: 70%;
+        align-self: center;
+        justify-content: center;
     }
     
     .titulo-index {
-
         color: white;
-
+        background-color: black;
+        border-radius: 12px 0px 0px 0px;    
+        opacity: 70%;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
     }
     
     .menu > li{
@@ -436,18 +473,13 @@ footer {
     }
     
     .red{
-       height: auto;
-       width: auto;
+       height: 20rem;
+       width: 3rem;
        max-width: 30px;
        max-height: 30px;
     }
     
-    .icon{
-        max-width: 30px;
-        max-height: 30px;
-    }
-    
-    .texto {
+    .texto h3 {
         color: white;
     } 
     
@@ -569,7 +601,7 @@ footer {
     }
     
     .red img {
-        height: 50px;
+        height: 2rem;
     }
     
     #redes {
@@ -583,16 +615,21 @@ footer {
         text-align: center;
         margin:0px;
         padding-bottom:2%;
+        font-size: 0.8rem;
     }
     
     footer {
         background-color: var(--header-color);
-        height:200px;
+        height:6rem;
         width:100%;
     }
     
+    #indexfooter > #titulo {
+        font-size: 2rem;
+    }
+
     #logofooter {
-        height:50%;
+        height:40%;
     }
     
     
@@ -635,6 +672,9 @@ footer {
         transition: 0.5s ease-in-out; 
     }
 }
+
+
+/*--------------Screen---------*/
 
 @media screen and (max-width: 480px) {
     * {
@@ -722,12 +762,21 @@ footer {
     
     .parrafo {
         visibility: visible;
+        background-color: black;
+        border-radius: 0px 0px 18px 0px;    
+        opacity: 70%;
+        align-self: center;
+        justify-content: center;
     }
     
     .titulo-index {
-
         color: white;
-
+        background-color: black;
+        border-radius: 15px 0px 0px 0px;    
+        opacity: 70%;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
     }
     
     .menu > li{
@@ -938,7 +987,7 @@ footer {
     }
     
     .red img {
-        height: 50px;
+        height: 2rem;
     }
     
     #redes {
@@ -952,16 +1001,20 @@ footer {
         text-align: center;
         margin:0px;
         padding-bottom:2%;
+        font-size: 0.8rem;
     }
     
     footer {
         background-color: var(--header-color);
-        height:200px;
+        height:6rem;
         width:100%;
     }
     
-    #logofooter {
-        height:50%;
+    #indexfooter > #titulo {
+        font-size: 2rem;
     }
-    
+
+    #logofooter {
+        height:40%;
+    }
 }
