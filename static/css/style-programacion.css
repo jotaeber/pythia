@@ -263,6 +263,10 @@ footer {
     height:50%;
 }
 
+.error {
+    font-style: italic;
+    color: red;
+}
 
 /*---------------------- media queries -------------------------*/
 
