@@ -60,14 +60,17 @@
         <h2>¡Suscribite a nuestro Newsletter!</h2>
         <div id="subs">
             
-            <form id="form-newsletter" action="https://formspree.io/f/mdordpgk" method="post">
+            <form id="form-newsletter" action="#" method="post">
                 <ul id="lista1">
                     <li class="lista"><label for="nombre">Ingrese su nombre:</label></li>
                     <input id="nombre" type="text" name="nombre" required placeholder="Nombre y Apellido">
-                    <li class="lista"><label for="e-mail">Ingrese su E-mail:</label></li>
-                    <input id="e-mail" type="email" name="correlect" required placeholder="tu.email@contacto.com">
+                    <div class="error" id="error-nombre"></div>
+                    <li class="lista"><label for="email">Ingrese su E-mail:</label></li>
+                    <input id="email" type="email" name="correlect" required placeholder="tu.email@contacto.com">
+                    <div class="error" id="error-email"></div>
                     <li class="lista"><label for="edad">Ingrese su edad:</label></li>
                     <input id="edad" type="number" name="edad" step="1" min="8" max="100" required placeholder="Edad">
+                    <div class="error" id="error-edad"></div>
                     <li class="lista"><label for="pais">¿De dónde eres?</label></li>
                     <select  class="lista" id="pais" name="pais" required placeholder="Argentina">
                         <option value="arg">Argentina</option>
@@ -83,6 +86,7 @@
                         <option value="vez">Venezuela</option>
                         <option value="otr">Otro</option>
                     </select>
+                    <div class="error" id="error-pais"></div>
                     <li class="lista"><p>¿Sobre qué te gustaría recibir novedades?</p></li>
                     <ul id="lista2">
                         <li class="lista"><label for="frontend">Tecnologías Frontend</label></li>

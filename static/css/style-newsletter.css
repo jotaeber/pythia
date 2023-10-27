@@ -167,7 +167,7 @@ hr {
 
 #lista1 {
     display: grid;
-    grid-template-columns: 20vw 35vw;
+    grid-template-columns: 20vw 26vw 35vw;
     grid-template-rows: 5vh 5vh 5vh 5vh 12vh 5vh 5vh 5vh;  
     gap: 20px;
 }
@@ -218,6 +218,17 @@ footer {
 
 #logofooter {
     height:50%;
+}
+
+.error {
+   
+    border-radius: 10px;
+}
+
+#error-mensaje {
+    margin-left: 20rem;
+    display: block;
+    color: var(--header-color);
 }
 
 /*---------------------- media queries -------------------------*/
@@ -321,7 +332,7 @@ hr {
 #lista1 {
     font-size: 1rem;
     display: grid;
-    grid-template-columns: 30vw 35vw;
+    grid-template-columns: 30vw 35vw 50vw;
     grid-template-rows: 5vh 5vh 5vh 5vh 12vh 5vh 5vh 5vh;  
     gap: 20px;
 }
@@ -329,7 +340,7 @@ hr {
 #lista2 {
     font-size: 1rem;
     display: grid;
-    grid-template-columns: 20vw 30vw ;
+    grid-template-columns: 20vw 30vw;
     grid-template-rows: 5vh 5vh 5vh 5vh;
     gap: 1.2rem;
 
@@ -483,7 +494,7 @@ hr {
 #lista1 {
     font-size: 1rem;
     display: grid;
-    grid-template-columns: 30vw 35vw;
+    grid-template-columns: 30vw 35vw 50vw;
     grid-template-rows: 5vh 5vh 5vh 5vh 12vh 5vh 5vh 5vh;  
     gap: 20px;
 }
