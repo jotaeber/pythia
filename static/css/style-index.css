@@ -449,11 +449,14 @@ footer {
     }
     
     .galeria{
+      
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       align-items: center;
       row-gap: 20px;
+      justify-content: space-evenly;
+
     }
     
     #cursos {
@@ -528,11 +531,7 @@ footer {
         color:black;
     }
     
-
-    
     #links {
-       
-      
         align-items: center;
         align-content: space-around;
         bottom:2%;
@@ -674,7 +673,7 @@ footer {
 }
 
 
-/*--------------Screen---------*/
+/*--------------------------- Media Queries --------------------------*/
 
 @media screen and (max-width: 480px) {
     * {
@@ -863,7 +862,6 @@ footer {
     header {
         background-color:var(--header-color); 
         height: 50px;
-        
     }
     
     #logo {
@@ -876,11 +874,7 @@ footer {
         color:black;
     }
     
-
-    
     #links {
-       
-      
         align-items: center;
         align-content: space-around;
         bottom:2%;
