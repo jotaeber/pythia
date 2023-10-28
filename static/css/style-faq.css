@@ -119,12 +119,26 @@ hr {
 .section__form {
     font-size: 20px;
     color: black;
+    display:inline;
+}
+
+.divs .error {
+    display: grid;
+    grid-template-columns: 30rem 30rem 30rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .section__form__input {
     width: auto;
     font-size: 20px;
     color: black;
+    display: inline;
+}
+
+.label {
+    display: inline;
+    font-size:1.2rem;
+    width: auto;
 }
 
 button {
@@ -133,6 +147,13 @@ button {
     margin-top: 1vh;
     margin-bottom: 1vh;
 }    
+
+.error {
+    color: red;
+    font: 1.4rem;
+    display: inline;
+    position: relative;
+}
 
 
 
@@ -291,7 +312,9 @@ footer a * {
         width: auto;
         font-size: 1.2rem;
         color: black;
+        display: inline;
     }
+
     
     button {
         width: 5rem;

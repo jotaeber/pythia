@@ -71,26 +71,41 @@
         </div>
         </section>
         <section class="section__form">
-                <form action="https://formspree.io/f/mdordpgk" method="post" class="legend">
+                <form action="#" method="post" class="legend" id="form-faq">
                     <fieldset id="formulario">
                         <legend>Dejanos tu consulta...</legend>
-                            <label for="nombre">Nombre y apellido:</lab1el>
-                            <input type="text" id="nombre" name="nombre" required class="section__form__input"><br>
-                            <label for="mail">Mail:</label>
-                            <input type="email" id="email" name="email" required class="section__form__input"><br>
-                            <label for="motivo" required class="section__form__input">Motivo de la consulta:</label><br>
-                            <select name="motivo" id="motivo"><br>
-                                <option disabled selected="">Seleccione una opción</option>
-                                <option value="2">Contenido</option>
-                                <option value="3">Tutorias</option>
-                                <option value="4">Temario orientador</option>
-                                <option value="5">Newsletter</option>
-                                <option value="6">Otro</option>
-                            </select><br><br>
-                            <textarea id="consulta" name="consulta" rows="5" required placeholder="Escriba su consulta aquí..." class="section__form__input"></textarea><br><br>
+                            <div class="divs">
+                                <label for="nombre" class="label">Nombre y apellido:</lab1el>
+                                <input type="text" id="nombre" name="nombre" class="section__form__input"><br>
+                            </div>
+                            <div class="error" id="error-nombre"></div>
+                            <div class="divs">    
+                                <label for="mail" class="label">Mail:</label>
+                                <input type="email" id="email" name="email" class="section__form__input"><br>
+                            </div>
+                            <div class="error" id="error-email"></div>
+                            <div class="divs">
+                                <label for="motivo" class="label">Motivo de la consulta:</label><br>
+                                <select name="motivo" id="motivo"><br>
+                                    <option disabled selected=""></option>
+                                    <option value="2">Contenido</option>
+                                    <option value="3">Tutorias</option>
+                                    <option value="4">Temario orientador</option>
+                                    <option value="5">Newsletter</option>
+                                    <option value="6">Otro</option>
+                                </select>
+                            </div>
+                            <div class="error" id="error-motivo"></div>
+                            <br><br>
+                            <div class="divs">
+                                <textarea id="consulta" name="consulta" rows="5" placeholder="Escriba su consulta aquí..." class="label"></textarea><br><br>
+                            </div>
+                            <div class="error" id="error-consulta"></div>
+                            <script src="../static/js/faq-validation.js"></script>
                             <button type="submit">Enviar</button>
                             <button type="reset">Borrar</button>
                 </fieldset>
+                
                 </form>
             </section>
     </main>
